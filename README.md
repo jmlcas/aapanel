@@ -1,6 +1,6 @@
 # aaPanel - Panel de control para VPS
 
-Ver en "localhost:8886/aapanel"
+Ver en "localhost:7800/aapanel"
 
 Usuario: aapanel
 
