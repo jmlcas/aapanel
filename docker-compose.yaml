@@ -7,12 +7,11 @@ services:
             context: ./bin/aapanel
         container_name: aapanel
         ports:
-            - "8886:7800"
+            - "7800:7800"
             - "21:21"
             - "443:443"
             - "80:80"
             - "888:888"
-            - "6379:6379"
         restart: unless-stopped
         volumes:
             - ./website_data:/www/wwwroot
