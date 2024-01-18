@@ -6,13 +6,13 @@ services:
         image: aapanel/aapanel:lib
         container_name: aapanel
         ports:
-            - 7800:7800
-            - 21:21
-            - 443:443
-            - 80:80
-            - 888:888
+            - "8886:7800"
+            - "21:21"
+            - "443:443"
+            - "80:80"
+            - "888:888"
         restart: unless-stopped
         volumes:
-            - ~/website_data:/www/wwwroot
-            - ~/mysql_data:/www/server/data
-            - ~/vhost:/www/server/panel/vhost
+            - ./website_data:/www/wwwroot
+            - ./mysql_data:/www/server/data
+            - ./vhost:/www/server/panel/vhost
