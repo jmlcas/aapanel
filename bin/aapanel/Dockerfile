@@ -1,4 +1,4 @@
-FROM aapanel/aapanel:lnmp
+FROM aapanel/aapanel:lib
 
 USER root
 
