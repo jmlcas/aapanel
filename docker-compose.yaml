@@ -3,7 +3,8 @@ version: '3.3'
 services:
 
     aapanel:
-        image: aapanel/aapanel:lib
+        build: 
+            context: ./bin/aapanel
         container_name: aapanel
         ports:
             - "8886:7800"
@@ -11,6 +12,7 @@ services:
             - "443:443"
             - "80:80"
             - "888:888"
+            - "6379:6379"
         restart: unless-stopped
         volumes:
             - ./website_data:/www/wwwroot
