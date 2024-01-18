@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
     aapanel:
-        image: aapanel/aapanel:lib    # aapanel/aapanel:lnmp
+        image: aapanel/aapanel:lib
         container_name: aapanel
         ports:
             - 7800:7800
